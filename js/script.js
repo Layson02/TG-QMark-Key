@@ -5,7 +5,7 @@ document.getElementById('generateBtn').addEventListener('click', () => {
     resultsDiv.innerHTML = '';
 
     if (!baseKeyInput.includes('?')) {
-        alert('Atenção: A chave precisa conter o caractere "?" para funcionar.');
+        alert('Atenção: O código precisa conter o caractere "?" para funcionar.');
         return;
     }
 
@@ -28,6 +28,7 @@ document.getElementById('generateBtn').addEventListener('click', () => {
                 await navigator.clipboard.writeText(newKey);
                 copyBtn.textContent = 'Copiado!';
                 copyBtn.classList.add('copied');
+                row.classList.add('copied-state');
                 
                 setTimeout(() => {
                     copyBtn.textContent = 'Copiar';
@@ -41,5 +42,31 @@ document.getElementById('generateBtn').addEventListener('click', () => {
         row.appendChild(span);
         row.appendChild(copyBtn);
         resultsDiv.appendChild(row);
+    }
+});
+
+document.getElementById('advancedBtn').addEventListener('click', async () => {
+    const baseKeyInput = document.getElementById('baseKey').value.toUpperCase().trim();
+    
+    if (!baseKeyInput.includes('?')) {
+        alert('Atenção: O código precisa conter o caractere "?" para funcionar.');
+        return;
+    }
+
+    let keyList = [];
+    for (let i = 9; i >= 0; i--) {
+        keyList.push(baseKeyInput.replace('?', i));
+    }
+    
+    try {
+        await navigator.clipboard.writeText(keyList.join('\n'));
+        const btn = document.getElementById('advancedBtn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copiado para o Macro!';
+        setTimeout(() => {
+            btn.textContent = originalText;
+        }, 2000);
+    } catch (err) {
+        alert('Erro ao copiar a lista.');
     }
 });

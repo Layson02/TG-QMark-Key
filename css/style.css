@@ -22,6 +22,13 @@ h1 {
     color: #ffffff;
 }
 
+.description {
+    font-size: 14px;
+    color: #8f98a0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
 input {
     width: 90%;
     padding: 12px;
@@ -34,9 +41,16 @@ input {
     border-radius: 3px;
 }
 
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
 button {
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 12px 18px;
+    font-size: 15px;
     background-color: #66c0f4;
     color: #171a21;
     border: none;
@@ -44,10 +58,21 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.2s;
+    flex: 1;
 }
 
 button:hover {
     background-color: #4199c6;
+}
+
+.secondary-btn {
+    background-color: #2a475e;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #1b2838;
+    border: 1px solid #66c0f4;
 }
 
 .key-row {
@@ -58,6 +83,7 @@ button:hover {
     background-color: #2a475e;
     padding: 10px 15px;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .key-text {
@@ -70,6 +96,7 @@ button:hover {
     background-color: #a3cc27;
     padding: 8px 12px;
     font-size: 14px;
+    flex: none;
 }
 
 .copy-btn:hover {
@@ -81,9 +108,11 @@ button:hover {
     color: white;
 }
 
-.description {
-    font-size: 14px;
-    color: #8f98a0;
-    margin-bottom: 20px;
-    line-height: 1.4;
+.key-row.copied-state {
+    opacity: 0.4;
+    background-color: #1a2a36;
+}
+
+.key-row.copied-state .key-text {
+    text-decoration: line-through;
 }
