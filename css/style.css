@@ -1,0 +1,82 @@
+body {
+    font-family: monospace;
+    background-color: #171a21;
+    color: #c7d5e0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background-color: #1b2838;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 420px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid #2a475e;
+    background-color: #101822;
+    color: white;
+    border-radius: 3px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4199c6;
+}
+
+.key-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    background-color: #2a475e;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.key-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.copy-btn {
+    background-color: #a3cc27;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background-color: #8bb922;
+}
+
+.copy-btn.copied {
+    background-color: #739413;
+    color: white;
+}
