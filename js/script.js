@@ -70,3 +70,10 @@ document.getElementById('advancedBtn').addEventListener('click', async () => {
         alert('Erro ao copiar a lista.');
     }
 });
+
+document.querySelectorAll('.popup-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        window.open(link.href, 'SteamWindow', 'width=1000,height=800,top=100,left=100,menubar=no,toolbar=no,location=no,status=no');
+    });
+});

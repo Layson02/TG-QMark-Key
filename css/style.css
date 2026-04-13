@@ -116,3 +116,24 @@ button:hover {
 .key-row.copied-state .key-text {
     text-decoration: line-through;
 }
+
+.footer-links {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #2a475e;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #8f98a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
