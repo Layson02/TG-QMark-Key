@@ -6,7 +6,7 @@ Este repositório contém um conjunto de ferramentas híbrido projetado para res
 
 ## 🚀 Versões do Projeto
 
-### 1. Interface Web Padrão (`index.html`)
+### 1. Interface Web Padrão
 
 Uma versão minimalista baseada no navegador, focada em velocidade e facilidade de uso para ativação manual padrão.
 
