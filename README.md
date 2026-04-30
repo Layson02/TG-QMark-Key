@@ -1,4 +1,61 @@
-# TG-QMark-Key (Decodificador Rápido)
+<a id="english"></a>
+# TG-QMark-Key
+
+[🇧🇷 Ler em Português](#portugues)
+
+This repository contains a hybrid toolset designed to quickly solve and test incomplete codes (keys containing a `?` character). The project offers two approaches: a fast web-based generator for manual copying and an advanced Python macro for automated insertion.
+
+---
+
+## 🚀 Project Versions
+
+### 1. Standard Web Interface
+
+A minimalist browser-based version focused on speed and ease of use for standard manual activation.
+
+* **Stack:** Pure HTML, CSS, and JavaScript.
+* **Instant Generation:** Replaces `?` with numbers from 9 to 0 instantly.
+* **One-Click Copy:** Dedicated buttons to copy each variation to the clipboard with visual feedback (strikethrough and darkened text on copied keys).
+* **Macro Integration:** Includes a "Copy List (Macro)" button to export the entire list directly to the clipboard, ready to feed the Python script.
+
+### 2. Advanced Macro (`macro.py`)
+
+A robust Python script designed to automate the typing and submission of keys in restricted interfaces.
+
+* **Library:** Uses `pyautogui` for keyboard simulation and `keyboard` to capture global system shortcuts.
+* **Anti-detection:** Implements random dynamic intervals (between 1.8s and 2.7s) between submissions to simulate human behavior and avoid predictable bot patterns.
+* **Real-Time Controls (Hotkeys):**
+    * `ESC`: Instantly terminates the program (Kill Switch) for safety.
+* **Preparation Delay:** Includes a 5-second interval before initial execution, allowing you to safely switch to the target window.
+
+---
+
+## 🛠️ Quick Installation
+
+To use the Advanced Macro (`macro.py`), you need to install the Python dependencies. 
+
+**⚠️ How to open the terminal in the correct location:**
+Before running the command, you need to open the terminal in the main project folder (where this README file is located). Choose the easiest method for you:
+
+* **Method 1: Via VS Code (Recommended)**
+  Open the project folder in VS Code. On the top menu, go to `Terminal > New Terminal` (or press the shortcut `` Ctrl + ` ``). The terminal will open in the correct folder.
+
+* **Method 2: Via File Explorer (Windows)**
+  Open the project folder. Right-click on an empty space and select **"Open in Terminal"**. (Ninja tip: you can also click on the folder's address bar, type `cmd` and press Enter).
+
+* **Method 3: Manual Navigation**
+  Open your system's terminal and use the `cd` command followed by the full path of where you saved the folder. 
+  Example: `cd C:\Users\YourUser\Downloads\TG-QMark-Key`
+
+With the terminal open in the right place, run the command below to install the libraries. It will automatically find the file inside the macro folder:
+
+```bash
+pip install -r macro/requirements.txt
+```
+
+[🇺🇸 Read in English](#english)
+
+<a id="portugues"></a>
 
 Este repositório contém um conjunto de ferramentas híbrido projetado para resolver e testar rapidamente códigos incompletos (chaves contendo um caractere `?`). O projeto oferece duas abordagens: um gerador rápido baseado em web para cópia manual e um macro avançado em Python para inserção automatizada.
 
