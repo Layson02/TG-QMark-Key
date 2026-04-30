@@ -105,3 +105,4 @@ Com o terminal aberto no local certo, execute o comando abaixo para instalar as 
 
 ```bash
 pip install -r macro/requirements.txt
+```
