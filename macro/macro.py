@@ -31,7 +31,6 @@ def iniciar_macro():
     else:
         try:
             base_delay = float(intervalo_input.replace(',', '.'))
-            # Cria uma variação de 0.2s para mais ou para menos para evitar detecção de bot
             min_delay = max(0.1, base_delay - 0.2)
             max_delay = base_delay + 0.2
             print(f"-> Usando intervalo personalizado (aprox. {base_delay}s com leve variação aleatória).")
