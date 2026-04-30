@@ -1,12 +1,12 @@
 # TG-QMark-Key (Decodificador Rápido)
 
-Este repositório contém um conjunto de ferramentas híbrido projetado para resolver e testar rapidamente códigos de ativação incompletos (chaves contendo um caractere `?`). O projeto oferece duas abordagens: um gerador rápido baseado em web para cópia manual e um macro avançado em Python para inserção automatizada.
+Este repositório contém um conjunto de ferramentas híbrido projetado para resolver e testar rapidamente códigos incompletos (chaves contendo um caractere `?`). O projeto oferece duas abordagens: um gerador rápido baseado em web para cópia manual e um macro avançado em Python para inserção automatizada.
 
 ---
 
 ## 🚀 Versões do Projeto
 
-### 1. Interface Web Padrão (`index.html`)
+### 1. Interface Web Padrão
 
 Uma versão minimalista baseada no navegador, focada em velocidade e facilidade de uso para ativação manual padrão.
 
